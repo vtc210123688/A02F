@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block current_app_content %}
+    <nav class="navbar navbar-default text-center" style="border: solid">
+        <span style="font-size: 50px; font-family: fantasy"><i>Other projects</i></span>
+        <span>
+            <ul class="nav navbar-nav navbar-right" style="padding: 10px 20px 10px 10px">
+            </ul>
+        </span>
+    </nav>
+    {% if form %}
+        <form  method="post" action="">
+            {{ form.hidden_tag() }}
+            {{ form.Pname.label }}<br>
+            {{ form.Pname (class='form-control')}}<br><br>
+            {{ form.description.label }}<br>
+            {{ form.description (class='form-control')}}<br><br>
+            {{ form.submit() }}
+        </form>
+    {% endif %}
+    <br>
+    {% for op in opp %}
+            {% if op.user_id == current_user.id %}
+        <div>
+            <div style="border: solid; padding: 20px 20px 20px 20px">
+                {{ op.Pname }}:&ensp;{{ op.description }}<br>
+                <div class="pull-right">
+                <a href="{{ url_for('main.edit_Other_projects', id=op.id) }}" class="glyphicon glyphicon-pencil"></a>
+                <a href="{{ url_for('main.del_Other_projects', id=op.id) }}" class="glyphicon glyphicon-trash"></a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

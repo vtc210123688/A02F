@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block current_app_content %}
+    <nav class="navbar navbar-default text-center" style="border: solid">
+        <span style="font-size: 50px; font-family: fantasy"><i>Did_you_know</i></span>
+        <span>
+            <ul class="nav navbar-nav navbar-right" style="padding: 10px 20px 10px 10px">
+            </ul>
+        </span>
+    </nav>
+    {% if form %}
+        <form  method="post" action="">
+            {{ form.hidden_tag() }}
+            {{ form.topic.label }}<br>
+            {{ form.topic (class='form-control')}}<br><br>
+            {{ form.date.label }} <br>
+            {{ form.date (class='form-control')}}<br>
+            {{ form.content.label }}<br>
+            {{ form.content (class='form-control')}}<br><br>
+            {{ form.submit() }}
+        </form>
+    {% endif %}
+    <br>
+    {% for did_you_know in dyk %}
+            {% if did_you_know.user_id == current_user.id %}
+        <div>
+            <div style="border: solid; padding: 20px 20px 20px 20px">
+                {{ did_you_know.topic }}:&ensp; {{ did_you_know.date }}:&ensp; {{ did_you_know.content }}<br>
+                <div class="pull-right">
+                <a href="{{ url_for('main.edit_Did_you_know', id=did_you_know.id) }}" class="glyphicon glyphicon-pencil"></a>
+                <a href="{{ url_for('main.del_Did_you_know', id=did_you_know.id) }}" class="glyphicon glyphicon-trash"></a>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    {% endfor %}
+{% endblock %}

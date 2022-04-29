@@ -1,0 +1,96 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}
+    {% if title %}{{ title }} - Microblog{% else %}{{ _('Welcome to Microblog') }}{% endif %}
+{% endblock %}
+
+{% block navbar %}
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="{{ url_for('main.Home') }}">WIKIPEDIA</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url_for('main.index') }}">{{ _('Home') }}</a></li>
+                    <li><a href="{{ url_for('main.explore') }}">{{ _('Explore') }}</a></li>
+                </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                        <a href="{{ url_for('main.hottopic') }}" title="" ><span>Hot</span></a></li>
+                        <li >
+                            <a href="{{ url_for('main.journal') }}" title=""><span>Journal</span></a></li>
+                    </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li style="margin-top: 10px">
+                        <div class="col">
+                            <input type="search" class="form-control" placeholder="搜尋維基百科"
+                                   aria-label="搜尋維基百科" aria-describedby="button-addon" >
+                        </div>
+                    </li>
+                    <li>
+                        <button class="glyphicon glyphicon-search" type="button" style="margin-top: 12px; padding: 5px 5px 5px 5px"></button>
+                    </li>
+                    {% if current_user.is_anonymous %}
+                        <li><a href="{{ url_for('auth.login') }}">{{ _('Login') }}</a></li>
+                    {% else %}
+                        <li><a href="{{ url_for('main.user', username=current_user.username) }}"class="glyphicon glyphicon-user">
+                            {{ _('%(username)s', username=current_user.username) }}</a>
+                        </li>
+                        <li><a href="{{ url_for('auth.logout') }}">{{ _('Logout') }}</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+{% endblock %}
+
+{% block content %}
+<div class="d-inline-flex-row">
+        <nav  class="navbar navbar-default col-lg-1 col-xl-1 "  style="height: 700px; width: 200px; margin-top: 40px; padding: 20px 20px 20px 30px">
+            <hr>
+            <ui style="list-style-type:none">Main
+                <hr>
+                <li>
+                    <a href="{{ url_for('main.Did_you_knows') }}" title=""><span>Did you know</span></a></li>
+                <li>
+                    <a href="{{ url_for('main.Other_project') }}" title=""><span>Other projects</span></a></li>
+                <li>
+                    <a href="{{ url_for('main.Categories1') }}" title=""><span>Categories</span></a></li>
+            <hr>
+            <li><a href="{{ url_for('main.news') }}">News</a></li>
+            <li><a href="{{ url_for('main.quiz') }}">Quiz</a></li>
+            <li><a href="{{ url_for('main.contact') }}">Contact Us</a></li>
+                <hr>
+                <li><a href="{{ url_for('main.about') }}">About</a></li>
+                <li><a href="{{ url_for('main.current') }}">Current</a></li>
+                <li><a href="{{ url_for('main.random') }}">Random</a></li>
+            </ui>
+        </nav>
+
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-info" role="alert">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+    <div class="col-xl-9 col-lg-9 col-md-6" style="margin-left: 20px">
+        {# current_application content needs to be provided in the current_app_content block #}
+        {% block current_app_content %}{% endblock %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+    {{ super() }}
+    {{ moment.include_moment() }}
+    {{ moment.lang(g.locale) }}
+{% endblock %}

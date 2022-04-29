@@ -1,0 +1,107 @@
+2022-04-29 06:09:30,758 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 06:09:57,456 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 06:10:10,692 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 06:10:17,149 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 06:10:21,875 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 06:12:01,317 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 06:13:38,073 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 06:14:40,005 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 06:15:11,113 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 06:17:45,040 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 06:18:18,057 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 16:54:06,393 INFO: Microblog startup [in D:\microblog\app\__init__.py:74]
+2022-04-29 16:54:12,069 INFO: Microblog startup [in D:\microblog\app\__init__.py:74]
+2022-04-29 16:54:18,848 INFO: Microblog startup [in D:\microblog\app\__init__.py:74]
+2022-04-29 16:54:56,354 INFO: Microblog startup [in D:\microblog\app\__init__.py:74]
+2022-04-29 16:56:30,770 ERROR: Exception on /upload_hottopic [POST] [in D:\microblog\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\microblog\app\main\routes.py", line 214, in upload_hottopic
+    file.save(os.path.join(Config.UPLOAD_FOLDER, filename))
+  File "D:\microblog\venv\lib\site-packages\werkzeug\datastructures.py", line 3021, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app\\static\\image\\1366x768-2874782-cowboy-bebop-swordfish-ii-anime___anime-wallpapers.jpg'
+2022-04-29 16:59:14,182 ERROR: Exception on /upload_hottopic [POST] [in D:\microblog\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "D:\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\microblog\app\main\routes.py", line 214, in upload_hottopic
+    file.save(os.path.join(Config.UPLOAD_FOLDER, filename))
+  File "D:\microblog\venv\lib\site-packages\werkzeug\datastructures.py", line 3021, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'app\\static\\image\\1366x768-2874782-cowboy-bebop-swordfish-ii-anime___anime-wallpapers.jpg'
+2022-04-29 17:14:33,365 INFO: Microblog startup [in C:\Users\owner\更\A02_final-master\app\__init__.py:74]
+2022-04-29 17:14:40,940 INFO: Microblog startup [in C:\Users\owner\更\A02_final-master\app\__init__.py:74]
+2022-04-29 17:14:48,859 INFO: Microblog startup [in C:\Users\owner\更\A02_final-master\app\__init__.py:74]
+2022-04-29 19:47:01,941 INFO: Microblog startup [in C:\Users\owner\更\A02_final-master\app\__init__.py:74]
+2022-04-29 19:47:08,242 ERROR: Exception on /about [GET] [in C:\Users\owner\更\A02_final-master\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlite3.OperationalError: no such table: about
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\owner\更\A02_final-master\app\main\routes.py", line 583, in about
+    about = About.query.order_by(About.id.desc()).paginate(
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\flask_sqlalchemy\__init__.py", line 534, in paginate
+    items = self.limit(per_page).offset((page - 1) * per_page).all()
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\orm\query.py", line 2759, in all
+    return self._iter().all()
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\orm\query.py", line 2894, in _iter
+    result = self.session.execute(
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\orm\session.py", line 1692, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1614, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\sql\elements.py", line 325, in _execute_on_connection
+    return connection._execute_clauseelement(
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1481, in _execute_clauseelement
+    ret = self._execute_context(
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1845, in _execute_context
+    self._handle_dbapi_exception(
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\engine\base.py", line 2026, in _handle_dbapi_exception
+    util.raise_(
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\util\compat.py", line 207, in raise_
+    raise exception
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\engine\base.py", line 1802, in _execute_context
+    self.dialect.do_execute(
+  File "C:\Users\owner\更\A02_final-master\venv\lib\site-packages\sqlalchemy\engine\default.py", line 732, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) no such table: about
+[SQL: SELECT about.id AS about_id, about.user_id AS about_user_id, about.title AS about_title, about.details AS about_details, about.date AS about_date 
+FROM about ORDER BY about.id DESC
+ LIMIT ? OFFSET ?]
+[parameters: (25, 0)]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2022-04-29 19:47:27,093 INFO: Microblog startup [in C:\Users\owner\更\A02_final-master\app\__init__.py:74]
+2022-04-29 19:47:34,697 INFO: Microblog startup [in C:\Users\owner\更\A02_final-master\app\__init__.py:74]
+2022-04-29 19:47:37,497 INFO: Microblog startup [in C:\Users\owner\更\A02_final-master\app\__init__.py:74]

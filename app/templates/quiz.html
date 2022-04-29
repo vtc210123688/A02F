@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block current_app_content %}
+    <nav class="navbar navbar-default text-center" style="border: solid">
+        <span style="font-size: 50px; font-family: fantasy"><i>Quiz</i></span>
+        <span>
+            <ul class="nav navbar-nav navbar-right" style="padding: 10px 20px 10px 10px">
+                <li><a href="{{ url_for('main.upload_quiz') }}" class="">Upload Quiz</a></li>
+            </ul>
+        </span>
+    </nav>
+
+      {% for quiz in quiz %}
+        <div>
+            <div style="border: solid; padding: 20px 20px 20px 20px">
+                Question:{{ quiz.question }}<br>
+                Answer:{{ quiz.answer }}<br>
+                <div class="pull-right">
+                <a href="{{ url_for('main.edit_quiz', id=quiz.id) }}" class="glyphicon glyphicon-pencil"></a>
+                <a href="{{ url_for('main.del_quiz', id=quiz.id) }}" class="glyphicon glyphicon-trash"></a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}

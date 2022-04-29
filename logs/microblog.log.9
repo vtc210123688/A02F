@@ -1,0 +1,94 @@
+2022-04-28 22:08:42,675 ERROR: Exception on /Did_you_know [GET] [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 343, in Did_you_know
+    dyk = Did_you_know.query.order_by(Journal.id.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 279, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 343, in Did_you_know
+    dyk = Did_you_know.query.order_by(Journal.id.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+2022-04-28 22:15:02,892 INFO: Microblog startup [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-28 22:44:38,250 INFO: Microblog startup [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-28 22:44:46,233 ERROR: Exception on /Did_you_know [GET] [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 343, in Did_you_know
+    dyk = Did_you_know.query.order_by(Journal.id.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 279, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 343, in Did_you_know
+    dyk = Did_you_know.query.order_by(Journal.id.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+2022-04-28 22:47:17,389 INFO: Microblog startup [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-28 22:47:22,652 ERROR: Exception on /journal [GET] [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 299, in journal
+    return render_template('Journal.html', title=_('Journal'), form=form, journals=journals.items)
+NameError: name 'journals' is not defined
+2022-04-28 22:47:36,737 INFO: Microblog startup [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-28 22:49:33,461 INFO: Microblog startup [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-28 22:49:37,364 ERROR: Exception on /Did_you_know [GET] [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 343, in Did_you_know
+    dyk = Did_you_know.query.order_by(Did_you_know.topic.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 279, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 343, in Did_you_know
+    dyk = Did_you_know.query.order_by(Did_you_know.topic.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+2022-04-28 23:24:40,605 INFO: Microblog startup [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-28 23:26:49,629 INFO: Microblog startup [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block current_app_content %}
+    <div class="container">
+        <div class="card center-block" style="width: 500px; height: 600px; border: double">
+            <form method="post" enctype=multipart/form-data class="form-group text-center"
+                  style="padding: 20px 20px 20px 20px">
+                title
+
+                <p>{{ form.title (class='form-control')}}</p><br>
+                image
+                <p>
+                <div><input type="file" name="Upload Image"  class="form-control form-control-sm"
+                            style="text-align: center;"></p><br></div>
+                description
+
+                <p>{{ form.description (class='form-control')}}</p><br>
+                exlink
+
+                <p>{{ form.exlink (class='form-control') }}</p><br>
+                <p><input type="submit" value="Submit" class="btn btn-primary btn-lg">
+                <a href="{{ url_for('main.hottopic') }}" class="btn btn-primary btn-lg">Cancel</a></p>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

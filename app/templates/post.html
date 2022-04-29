@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block current_app_content %}
+    <div class="d-flex">
+        <b><h1>{{ post.title }}</h1></b>
+        <hr>
+
+        <div>{{ post.body }}</div>
+        {% if not current_user.is_anonymous %}
+            <a href="{{ url_for('main.edit_post',id=post.id) }}" class="btn btn-primary btn-sm">{{ _('Edit') }}</a>
+            {% if post.user_id == current_user.id %}
+                <a href="{{ url_for('main.delete_post', id=post.id) }}"
+                   class="btn btn-danger btn-sm">{{ _('Delete') }}</a>
+            {% endif %}
+
+
+        <div class="bg-info">
+            <p><h3>Comment</h3></p>
+            {% for comment in pages %}
+                {% if id == comments.post_id %}
+                    <!--comment-->
+                    <div style="border: groove; border-radius: 10px;">
+                        <table class="table">
+                            <tr>
+                                <td style="font-size: 16px" style="border: solid">
+                                    <a href="{{ url_for('main.user', username=comment.comment_username) }}">
+                                        {{ comment.comment_username }}</a>: {{ comment.comment }}
+                                </td>
+                                <td>
+                                    {% if current_user.username == comment.comment_username %}
+                                        <a href="{{ url_for('main.delete_comment', comment_id=comment.comment_id) }}"
+                                           class="glyphicon glyphicon-remove pull-right"></a>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                {% endif %}
+            {% endfor %}
+
+            <div>
+                <hr>
+                <form action="" method="post">
+                    {{ _('%(username)s : ', username=current_user.username) }}
+                    {{ form.hidden_tag() }}
+                    <div class="form-group">
+                        {{ form.comment }}
+                        {{ form.submit() }}
+                    </div>
+                </form>
+            </div>
+        {% endif %}
+            </p>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block current_app_content %}
+    <div class="container">
+        <div class="card center-block" style="width: 700px; height: 600px; border: double">
+            <form method="post" action="" class="form-group text-center">
+            {{ form.hidden_tag() }}
+            {{ form.date.label }} &ensp; e.g. yyyy-mm-dd <br>
+            {{ form.date (class='form-control')}}<br><br>
+            {{ form.topic.label }}<br>
+            {{ form.topic (class='form-control')}}<br><br>
+            {{ form.content.label }}<br>
+            {{ form.content (class='form-control')}}<br><br>
+            {{ form.submit(class="btn btn-primary btn-lg") }}&ensp;<a href="{{ url_for('main.Did_you_knows') }}" class="btn btn-primary btn-lg">Cancel</a></p>
+            </form>
+        </div>
+    </div>
+{% endblock %}

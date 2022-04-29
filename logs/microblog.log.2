@@ -1,0 +1,92 @@
+2022-04-29 03:17:03,093 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:17:39,497 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:18:12,183 ERROR: Exception on /Other_projects [POST] [in C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 379, in Other_project
+    description=form.content.data,
+AttributeError: 'Other_projectsForm' object has no attribute 'content'
+2022-04-29 03:18:30,301 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:18:30,786 ERROR: Exception on /Other_projects [GET] [in C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 387, in Other_project
+    return render_template('Other_projects.html', title=_('Other projects'), form=form, opp=opp.items)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\templates\Other_projects.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block 'doc'
+    {%- block html %}
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block 'html'
+    {% block body -%}
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block 'body'
+    {% block content -%}
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\templates\base.html", line 86, in block 'content'
+    {% block current_app_content %}{% endblock %}
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\templates\Other_projects.html", line 29, in block 'current_app_content'
+    <a href="{{ url_for('main.edit_Categories', Pname=op.Pname) }}" class="glyphicon glyphicon-pencil"></a>
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\helpers.py", line 338, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\helpers.py", line 325, in url_for
+    rv = url_adapter.build(
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\werkzeug\routing.py", line 2315, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main.edit_Categories' with values ['Pname']. Did you forget to specify values ['id']?
+2022-04-29 03:19:39,610 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:20:08,753 ERROR: Exception on /edit_Categories/1 [GET] [in C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py:1457]
+Traceback (most recent call last):
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\venv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 444, in edit_Categories
+    form.category.data = cs.category
+AttributeError: 'JournalForm' object has no attribute 'category'
+2022-04-29 03:21:07,862 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Help project\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:35:54,920 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:36:10,655 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:36:28,610 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:36:35,971 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:36:40,287 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:43:49,279 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:35:54,920 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:36:10,655 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:36:28,610 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:36:35,971 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:36:40,287 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-29 03:43:49,279 INFO: Microblog startup [in C:\Users\User\PycharmProjects\Correct\EA_project_A02\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]

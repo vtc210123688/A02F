@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block current_app_content %}
+    <div class="row">
+        <b><h1>wiki</h1>
+            <hr>
+        </b>
+        <p>
+            維基百科，自由的百科全書
+        </p>
+        <div class="d-inline-flex col-lg-9 col-md-9 col-sm-8" >
+            <div>
+            <p>
+                wiki（聆聽i/ˈwɪkiː/）是一種可通過瀏覽器存取並由用戶協同編輯其內容的網站。沃德·坎寧安於1995年開發了最初的wiki。他將wiki定義為「一種允許一群用戶用簡單的描述來建立和連接一組網頁的社會計算系統」[1]。
+
+                有些人認爲[2]，wiki系統屬於一種人類知識的網絡系統，讓人們可以在web的基礎上對wiki文字進行瀏覽、建立和更改，而且這種建立、更改及發佈的成本遠比HTML文字小。與此同時，wiki系統還支援那些面向社群的協作式寫作，爲協作式寫作提供必要的幫助。最後wiki的寫作者自然構成一個社群，wiki系統爲這個社群提供簡單的交流工具。與其它超文字系統相比，wiki有使用簡便且開放的特點，有助於在一個社群內共用某個領域的知識。
+            </p>
+                <div style="padding-left: 0px; border: double; width: 100px; background-color: rgba(241, 241, 241, 0.836)">目次
+                    <ol>
+                        <li>item1</li>
+                        <li>item2</li>
+                        <li>item3</li>
+                        <li>item4</li>
+                    </ol>
+                    <ol>
+                        <li>item1</li>
+                        <li>item2</li>
+                        <li>item3</li>
+                        <li>item4</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <span >
+            <a href="/wiki/File:Ward_Cunningham_-_Commons-1.jpg">
+            <img alt=""
+                 src="//upload.wikimedia.org/wikipedia/commons/thumb/8/88/Ward_Cunningham_-_Commons-1.jpg/220px-Ward_Cunningham_-_Commons-1.jpg"
+                 decoding="async" width="220" height="236"></a>
+                <br>
+                <a href="/wiki/%E6%B2%83%E5%BE%B7%C2%B7%E5%9D%8E%E5%AE%81%E5%AE%89">沃德·坎寧安</a>，wiki技術的發明者。
+        </span>
+    </div>
+{% endblock %}

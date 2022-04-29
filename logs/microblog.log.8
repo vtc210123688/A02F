@@ -1,0 +1,122 @@
+2022-04-28 23:26:52,887 ERROR: Exception on /Did_you_know [GET] [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 343, in Did_you_know
+    dyk = Did_you_know.query.order_by(Did_you_know.topic.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 279, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 343, in Did_you_know
+    dyk = Did_you_know.query.order_by(Did_you_know.topic.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+2022-04-28 23:26:54,296 ERROR: Exception on /Other_projects [GET] [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 388, in Other_projects
+    opp = Other_projects.query.order_by(opp.Pname.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 279, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 388, in Other_projects
+    opp = Other_projects.query.order_by(opp.Pname.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+2022-04-28 23:26:55,165 ERROR: Exception on /Categories [GET] [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 430, in Categories
+    cy = Categories.query.order_by(Categories.category.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 279, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 430, in Categories
+    cy = Categories.query.order_by(Categories.category.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+2022-04-28 23:32:36,136 INFO: Microblog startup [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-28 23:32:42,032 ERROR: Exception on /Did_you_know [GET] [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 343, in Did_you_know
+    dyk = Did_you_know.query.order_by(Did_you_know.topic.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 279, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 343, in Did_you_know
+    dyk = Did_you_know.query.order_by(Did_you_know.topic.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+2022-04-28 23:50:42,467 INFO: Microblog startup [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\__init__.py:74]
+2022-04-28 23:50:45,977 ERROR: Exception on /Did_you_know [GET] [in C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py:1455]
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 277, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 343, in Did_you_know
+    dyk = Did_you_know.query.order_by(Did_you_know.topic.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 2077, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1525, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1523, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask\app.py", line 1509, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\venv\lib\site-packages\flask_login\utils.py", line 279, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\fatte\Downloads\EA_project_A02-Alex_Correct\EA_project_A02-Alex_Correct\microblog\app\main\routes.py", line 343, in Did_you_know
+    dyk = Did_you_know.query.order_by(Did_you_know.topic.desc()).paginate(
+AttributeError: 'function' object has no attribute 'query'
